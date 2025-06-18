@@ -1,6 +1,7 @@
 import { Controller, Get, Post, Put, Delete, Param, Body } from '@nestjs/common';
 import { UsuarioService } from './usuarios.service';
 
+import { UsuarioSchema } from './schemas/usuario.schema'; // Assuming you have a schema defined for Usuario
 @Controller('api/usuarios')
 export class UsuarioController {
   constructor(private readonly usuarioService: UsuarioService) {}
