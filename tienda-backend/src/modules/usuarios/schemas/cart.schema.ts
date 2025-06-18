@@ -5,5 +5,4 @@ export const CartItemSchema = new Schema({
   title: String,
   price: Number,
   quantity: Number,
-  image: String,
 });
